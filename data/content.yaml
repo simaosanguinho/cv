@@ -4,18 +4,15 @@ en:
   
   contact:
     - icon: "fas fa-envelope"
-      text: "your.email@example.com"
-      link: "mailto:your.email@example.com"
-    - icon: "fas fa-phone"
-      text: "+1 234 567 8900"
-      link: "tel:+12345678900"
+      text: "simao.sanguinho@gmail.com"
+      link: "mailto:simao.sanguinho@gmail.com"
     - icon: "fas fa-map-marker-alt"
-      text: "Your City, Country"
+      text: "Lisbon, Portugal"
     - icon: "fab fa-linkedin"
-      text: "linkedin.com/in/yourprofile"
-      link: "https://linkedin.com/in/yourprofile"
+      text: "Linkedin"
+      link: "https://www.linkedin.com/in/sim%C3%A3o-sanguinho-aa973a171/"
     - icon: "fab fa-github"
-      text: "github.com/yourusername"
+      text: "Github"
       link: "https://github.com/yourusername"
   
   skills:
