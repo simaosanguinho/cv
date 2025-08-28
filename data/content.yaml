@@ -1,0 +1,57 @@
+en:
+  name: "Simão Sanguinho"
+  tagline: "Computer Science and Engineering Student | Aspiring Software Engineer"
+  
+  contact:
+    - icon: "fas fa-envelope"
+      text: "your.email@example.com"
+      link: "mailto:your.email@example.com"
+    - icon: "fas fa-phone"
+      text: "+1 234 567 8900"
+      link: "tel:+12345678900"
+    - icon: "fas fa-map-marker-alt"
+      text: "Your City, Country"
+    - icon: "fab fa-linkedin"
+      text: "linkedin.com/in/yourprofile"
+      link: "https://linkedin.com/in/yourprofile"
+    - icon: "fab fa-github"
+      text: "github.com/yourusername"
+      link: "https://github.com/yourusername"
+  
+  skills:
+    - category: "Programming Languages"
+      items:
+        - name: "Python"
+          rating: 5
+        - name: "JavaScript"
+          rating: 4
+        - name: "Go"
+          rating: 3
+    - category: "Frameworks"
+      items:
+        - name: "React"
+          rating: 4
+        - name: "Django"
+          rating: 5
+        - name: "Hugo"
+          rating: 3
+    - category: "Tools & Technologies"
+      items:
+        - name: "Docker"
+          rating: 4
+        - name: "Git"
+          rating: 5
+        - name: "AWS"
+          rating: 3
+  
+  experience:
+    - role: "Senior Software Engineer"
+      company: "Tech Company"
+      period: "2022 - Present"
+      details: "<p>Lead development of web applications using modern technologies. Managed a team of 5 developers and implemented CI/CD pipelines.</p><ul><li>Improved application performance by 40%</li><li>Mentored junior developers</li></ul>"
+    - role: "Software Engineer"
+      company: "Another Company"
+      period: "2020 - 2022"
+      details: "<p>Developed and maintained backend services. Worked with microservices architecture and cloud technologies.</p>"
+  
+  education:
