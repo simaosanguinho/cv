@@ -280,6 +280,10 @@ button {
       a {
         color: var(--accentColor);
         text-decoration: none;
+
+         &:hover {
+        text-decoration: underline;
+      }
       }
     }
 
@@ -293,6 +297,69 @@ button {
       font-weight: bold;
     }
   }
+
+  .cv-jobs-company {
+  margin-bottom: 2em;
+
+  .cv-jobs-company--header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+
+    a {
+      color: var(--accentColor); // white links
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .cv-jobs-item {
+    position: relative;
+    padding-left: 1.5em; // space for timeline bar
+    display: grid;
+    grid-template-columns: 1fr auto; // left: role, right: period
+    align-items: baseline;
+    margin-bottom: 1.2em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0.2em;
+      top: 0.2em;
+      bottom: 0.3em;
+      width: 3px;
+      background-color: var(--accentColor);
+    }
+
+    .cv-jobs-item--name {
+      font-size: 1.05em;
+      font-weight: bold;
+      text-align: left;
+
+      a {
+        color: var(--headerTextColor); // force white
+      }
+    }
+
+    .cv-jobs-item--info {
+      font-size: 0.9em;
+      color: var(--bodyTextColor);
+
+      i {
+        margin-right: 0.2em;
+      }
+    }
+
+    .cv-jobs-item--description {
+      grid-column: 1 / -1; // span both columns
+      margin-top: 0.3em;
+    }
+  }
+}
+
 }
 
 // Toolbar

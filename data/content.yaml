@@ -4,6 +4,7 @@ en:
 
   sections:
     education: "Education"
+    experience: "Experience"
     skills: "Skills"
     contact: "Contact"
 
@@ -85,3 +86,33 @@ en:
             - Final average: 96.4% (0.00% - 99.99%)
             - Top 2nd in the school and top 4% in the state of Victoria
             - Awarded VCE Premier's Award (2020) for Outstanding Academic Achievement
+
+  experience:
+  - company: "Técnico Lisboa - Dept. of Computer Science and Engineering"
+    link: "https://dei.tecnico.ulisboa.pt/en/"
+    location: "Lisbon, Portugal"
+    roles:
+      - role: "Full Stack Developer (Research Fellowship)"
+        period: "Sep 2024 – Present"
+        details: |-
+          - Contributed to the development of the Department's Management System, built using Java Spring Boot and Vue, with a focus on a sub-system integrated with the university API, that facilitates the teaching assistant application process.
+
+  - company: "Deloitte Portugal"
+    link: "https://www.deloitte.com/pt/pt.html"
+    location: "Lisbon, Portugal"
+    roles:
+      - role: "Summer Internship (U@Deloitte)"
+        period: "Jun 2024 – Jul 2024"
+        details: |-
+          - Worked on an automated guided vehicle system to be implemented at large facilities, across multiple industries, particularly on the alignment of the system's Lidar sensors, through the implementation of point cloud algorithms.
+
+  - company: "Técnico Lisboa - Informatic Services Department"
+    link: "https://si.tecnico.ulisboa.pt/en/"
+    location: "Lisbon, Portugal"
+    roles:
+      - role: "Research Grantee (Research Fellowship)"
+        period: "Sep 2023 – Sep 2024"
+        details: |-
+          - Participated in the integration of Learning Tools Interoperability (LTI) within the university's Moodle platform.
+          - Managed and maintained the university's Video Conference spaces and the SAGE2 Video Wall at IST.
+
