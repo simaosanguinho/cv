@@ -1,6 +1,6 @@
 en:
   name: "Simão Sanguinho"
-  tagline: "Computer Science and Engineering Student | Aspiring Software Engineer"
+  tagline: "Computer Science and Engineering Student | Aspiring Cloud Engineer"
 
   sections:
     education: "Education"
@@ -15,37 +15,45 @@ en:
     - icon: "fas fa-map-marker-alt"
       text: "Lisbon, Portugal"
     - icon: "fab fa-linkedin"
-      text: "Linkedin"
+      text: "LinkedIn"
       link: "https://www.linkedin.com/in/sim%C3%A3o-sanguinho-aa973a171/"
     - icon: "fab fa-github"
       text: "Github"
-      link: "https://github.com/yourusername"
+      link: "https://github.com/simaosanguinho"
 
   skills:
-    - category: "Programming Languages"
+    - category: "Programming"
       items:
         - name: "Python"
-          rating: 5
-        - name: "JavaScript"
-          rating: 4
-        - name: "Go"
-          rating: 3
-    - category: "Frameworks"
-      items:
-        - name: "React"
-          rating: 4
-        - name: "Django"
-          rating: 5
-        - name: "Hugo"
-          rating: 3
+        - name: "Java"
+        - name: "C/C++"
+        - name: "VueJS"
+        - name: "HTML & CSS"
+        - name: "JavaScript & TypeScript"
+        - name: "Shell"
+          
     - category: "Tools & Technologies"
       items:
-        - name: "Docker"
-          rating: 4
         - name: "Git"
-          rating: 5
         - name: "AWS"
-          rating: 3
+        - name: "Docker"
+        - name: "MariaDB & PostgreSQL"
+        - name: "Nix"
+
+      -category: "Operating Systems"
+      items:        
+        - name: "NixOS"
+        - name: "Mint, Debian & Ubuntu"
+        - name: "MacOS"
+        - name: "Windows"
+
+
+    - category: "Languages"
+      items:
+        - name: "Portuguese"
+          value: "Native"
+        - name: "English"
+          value: "Fluent (C1)"
 
   education:
     - institution: "Instituto Superior Técnico"
@@ -57,7 +65,7 @@ en:
           link: "https://tecnico.ulisboa.pt/en/ensino/cursos/mestrados/engenharia-informatica-e-de-computadores/"
           description: |-
             - Current average: 17/20
-            - Focusing on Cybersecurity, Distributed Systems, and Cloud Computing.
+            - Focusing on Cybersecurity, Distributed Systems and Cloud Computing.
         - name: "Bachelor's in Computer Science and Engineering (LEIC-A)"
           date: "Sep 2021 - Jul 2024"
           link: "https://tecnico.ulisboa.pt/en/education/courses/masters-programmes/computer-science-and-engineering/"

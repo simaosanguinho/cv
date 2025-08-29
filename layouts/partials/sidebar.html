@@ -19,13 +19,9 @@
       {{ range .items }}
       <div class="cv-skills-entry">
         <h5 class="cv-skills-entry--name">{{ .name }}</h5>
-        <div class="cv-skills-entry--rating">
-          {{ range $i := seq .rating }}
-          <span class="cv-skills-entry--rating-circle__active">●</span>
-          {{ end }} {{ range $i := seq (sub 5 .rating) }}
-          <span class="cv-skills-entry--rating-circle__inactive">●</span>
-          {{ end }}
-        </div>
+        {{ with .value }}
+              {{ . }}
+        {{ end }}
       </div>
       {{ end }}
     </div>
