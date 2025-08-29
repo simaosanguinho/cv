@@ -10,22 +10,41 @@
     {{ end }}
   </section>
 
-  <section class="cv-education">
-    <h2>
-      <i class="fa-solid fa-graduation-cap"></i>
-      {{ .Site.Data.content.en.sections.education }}
-    </h2>
-    {{ range .Site.Data.content.en.education }}
+<section class="cv-education">
+  <h2>
+    <i class="fa-solid fa-graduation-cap"></i>
+    {{ .Site.Data.content.en.sections.education }}
+  </h2>
+
+  {{ range .Site.Data.content.en.education }}
+  <div class="cv-education-institution">
+    <div class="cv-education-institution--header">
+      {{ if .link }}
+        <a href="{{ .link }}" target="_blank" rel="noopener">
+          {{ .institution }}
+        </a>
+      {{ else }}
+        {{ .institution }}
+      {{ end }}
+       — {{ .location }}
+    </div>
+
+    {{ range .degrees }}
     <div class="cv-education-item">
-      <div class="cv-education-item--name">{{ .name | markdownify }}</div>
+      <div class="cv-education-item--name">
+        {{ if .link }}
+          <a href="{{ .link }}" target="_blank" rel="noopener">
+            {{ .name | markdownify }}
+          </a>
+        {{ else }}
+          {{ .name | markdownify }}
+        {{ end }}
+      </div>
+
       <div class="cv-education-item--info">
         <div>
           <i class="fa-solid fa-calendar-days"></i>
           {{ .date | markdownify }}
-        </div>
-        <div>
-          <i class="fa-solid fa-location-dot"></i>
-          {{ .location | markdownify }}
         </div>
       </div>
 
@@ -34,5 +53,9 @@
       </div>
     </div>
     {{ end }}
-  </section>
+  </div>
+  {{ end }}
+</section>
+
+
 </main>

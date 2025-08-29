@@ -48,30 +48,42 @@ en:
   
   
   education:
-    - name: Master's in Computer Science and Engineering - Instituto Superior Técnico
+    - institution: "Instituto Superior Técnico"
       location: "Lisbon, Portugal"
-      date: "Sep 2024 - Jul 2026"
-      description: |-
-        - Current average: 17/20
-        - Strong focus on Cybersecurity, Distributed Systems, and Cloud Computing.
+      link: "https://tecnico.ulisboa.pt/en/"
+      degrees:
+        - name: "Master's in Computer Science and Engineering (MEIC-A)"
+          date: "Sep 2024 - Jul 2026"
+          link: "https://tecnico.ulisboa.pt/en/ensino/cursos/mestrados/engenharia-informatica-e-de-computadores/"
+          description: |-
+            - Current average: 17/20
+            - Focusing on Cybersecurity, Distributed Systems, and Cloud Computing.
+        - name: "Bachelor's in Computer Science and Engineering (LEIC-A)"
+          date: "Sep 2021 - Jul 2024"
+          link: "https://tecnico.ulisboa.pt/en/education/courses/masters-programmes/computer-science-and-engineering/"
+          description: |-
+            - Final average: 17/20
+            - Awarded [Academic Merit Diploma (2023/2024)](/docs/merit-en-2024.pdf)
+            - Awarded [Academic Merit Diploma (2024/2025)](/docs/merit-en-2025.pdf)
 
-    - name: "Bachelor's in Computer Science and Engineering - Instituto Superior Técnico"
-      location: "Lisbon, Portugal"
-      date: "Sep 2021 - Jul 2024"
-      description: |-
-        - Final average: 17/20
-        - Awarded [Academic Merit Diploma (2023/2024)](/docs/merit-en-2024.pdf)
-        - Awarded [Academic Merit Diploma (2024/2025)](/docs/merit-en-2025.pdf)
-    - name: "Bachelor of Science - The University of Melbourne"
+
+    - institution: "The University of Melbourne"
       location: "Melbourne, Australia"
-      date: "Jan 2021 - Dec 2021"
-      description: |-
-        - Final average: 80/100
-    - name: "High School - Bentleigh Secondary College"
+      link: "https://www.unimelb.edu.au/"
+      degrees:
+        - name: "Bachelor of Science"
+          date: "Jan 2021 - Dec 2021"
+          link: "https://study.unimelb.edu.au/find/courses/undergraduate/bachelor-of-science/"
+          description: |-
+            - Final average: 80/100
+
+    - institution: "Bentleigh Secondary College"
       location: "Melbourne, Australia"
-      date: "Nov 2019 - Dec 2020"
-      description: |-
-        - Final average: 96.4% (0.00% - 99.99%)
-        - Year 12 of the Victorian Certificate of Education (VCE)
-        - Top 2nd in the school and top 4% in the state of Victoria
-        - Awarded VCE Premier's Award (2020) for Outstanding Academic Achievement
+      link: "https://www.bentleighsc.vic.edu.au/"
+      degrees:
+        - name: "High School - Year 12 (VCE)"
+          date: "Nov 2019 - Dec 2020"
+          description: |-
+            - Final average: 96.4% (0.00% - 99.99%)
+            - Top 2nd in the school and top 4% in the state of Victoria
+            - Awarded VCE Premier's Award (2020) for Outstanding Academic Achievement

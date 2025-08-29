@@ -90,6 +90,20 @@ html, body {
   }
 }
 
+// Links and buttons
+a, button {
+  text-decoration: none;
+  color: var(--accentColor);
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
 // CV body with sidebar + main content
 .cv-body {
   flex-grow: 1;
@@ -193,7 +207,7 @@ html, body {
   margin-bottom: 1em;
 
   .cv-education-item--name {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
     text-align: left;
   }
@@ -210,21 +224,36 @@ html, body {
 
 }
 
+.cv-education-institution {
+  margin-bottom: 2em;
+  color: $backgroundLight;
+
+
+  .cv-education-institution--header {
+    font-size: 1.2em;   // bigger font size
+    font-weight: bold;
+    margin-bottom: 0.5em;
+
+    a {
+      color: var(--accentColor);
+      text-decoration: none;
+    }
+  }
+
+  .cv-education-item {
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: var(--headerTextColor);
+    font-weight: bold;
+  }
+}
+
 
 }
 
-// Links and buttons
-a, button {
-  text-decoration: none;
-  color: var(--accentColor);
-  font-weight: bold;
-}
-
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
 
 // Toolbar
 .toolbar {
