@@ -1,7 +1,7 @@
 en:
   name: "Simão Sanguinho"
   tagline: "Computer Science and Engineering Student | Aspiring Software Engineer"
-  
+
   sections:
     education: "Education"
     skills: "Skills"
@@ -19,7 +19,7 @@ en:
     - icon: "fab fa-github"
       text: "Github"
       link: "https://github.com/yourusername"
-  
+
   skills:
     - category: "Programming Languages"
       items:
@@ -45,8 +45,7 @@ en:
           rating: 5
         - name: "AWS"
           rating: 3
-  
-  
+
   education:
     - institution: "Instituto Superior Técnico"
       location: "Lisbon, Portugal"
@@ -65,7 +64,6 @@ en:
             - Final average: 17/20
             - Awarded [Academic Merit Diploma (2023/2024)](/docs/merit-en-2024.pdf)
             - Awarded [Academic Merit Diploma (2024/2025)](/docs/merit-en-2025.pdf)
-
 
     - institution: "The University of Melbourne"
       location: "Melbourne, Australia"

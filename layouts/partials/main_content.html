@@ -1,4 +1,46 @@
 <main class="cv-sections">
+  <section class="cv-education">
+    <h2>
+      <i class="fa-solid fa-graduation-cap"></i>
+      {{ .Site.Data.content.en.sections.education }}
+    </h2>
+
+    {{ range .Site.Data.content.en.education }}
+    <div class="cv-education-institution">
+      <div class="cv-education-institution--header">
+        {{ if .link }}
+        <a href="{{ .link }}" target="_blank" rel="noopener">
+          {{ .institution }}
+        </a>
+        {{ else }} {{ .institution }} {{ end }} — {{ .location }}
+      </div>
+
+      {{ range .degrees }}
+      <div class="cv-education-item">
+        <div class="cv-education-item--name">
+          {{ if .link }}
+          <a href="{{ .link }}" target="_blank" rel="noopener">
+            {{ .name | markdownify }}
+          </a>
+          {{ else }} {{ .name | markdownify }} {{ end }}
+        </div>
+
+        <div class="cv-education-item--info">
+          <div>
+            <i class="fa-solid fa-calendar-days"></i>
+            {{ .date | markdownify }}
+          </div>
+        </div>
+
+        <div class="cv-education-item--description">
+          {{ .description | markdownify }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+
   <section class="cv-jobs">
     <h2><i class="fas fa-briefcase"></i>Experience</h2>
     {{ range .Site.Data.content.experience }}
@@ -9,53 +51,4 @@
     </div>
     {{ end }}
   </section>
-
-<section class="cv-education">
-  <h2>
-    <i class="fa-solid fa-graduation-cap"></i>
-    {{ .Site.Data.content.en.sections.education }}
-  </h2>
-
-  {{ range .Site.Data.content.en.education }}
-  <div class="cv-education-institution">
-    <div class="cv-education-institution--header">
-      {{ if .link }}
-        <a href="{{ .link }}" target="_blank" rel="noopener">
-          {{ .institution }}
-        </a>
-      {{ else }}
-        {{ .institution }}
-      {{ end }}
-       — {{ .location }}
-    </div>
-
-    {{ range .degrees }}
-    <div class="cv-education-item">
-      <div class="cv-education-item--name">
-        {{ if .link }}
-          <a href="{{ .link }}" target="_blank" rel="noopener">
-            {{ .name | markdownify }}
-          </a>
-        {{ else }}
-          {{ .name | markdownify }}
-        {{ end }}
-      </div>
-
-      <div class="cv-education-item--info">
-        <div>
-          <i class="fa-solid fa-calendar-days"></i>
-          {{ .date | markdownify }}
-        </div>
-      </div>
-
-      <div class="cv-education-item--description">
-        {{ .description | markdownify }}
-      </div>
-    </div>
-    {{ end }}
-  </div>
-  {{ end }}
-</section>
-
-
 </main>

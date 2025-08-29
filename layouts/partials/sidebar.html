@@ -1,38 +1,34 @@
-
 <aside class="cv-sidebar">
   <section class="cv-contact">
     <h3 class="cv-sidebar-heading">Contact</h3>
     {{ range .Site.Data.content.en.contact }}
-      <div class="cv-contact-item">
-        <i class="{{ .icon }}"></i>
-        {{ if .link }}
-          <a href="{{ .link }}">{{ .text }}</a>
-        {{ else }}
-          {{ .text }}
-        {{ end }}
-      </div>
+    <div class="cv-contact-item">
+      <i class="{{ .icon }}"></i>
+      {{ if .link }}
+      <a href="{{ .link }}">{{ .text }}</a>
+      {{ else }} {{ .text }} {{ end }}
+    </div>
     {{ end }}
   </section>
 
   <section class="cv-skills">
     <h3 class="cv-sidebar-heading">Skills</h3>
     {{ range .Site.Data.content.en.skills }}
-      <div class="cv-skills-section">
-        <h4 class="cv-skills-section-title">{{ .category }}</h4>
-        {{ range .items }}
-          <div class="cv-skills-entry">
-            <h5 class="cv-skills-entry--name">{{ .name }}</h5>
-            <div class="cv-skills-entry--rating">
-              {{ range $i := seq .rating }}
-                <span class="cv-skills-entry--rating-circle__active">●</span>
-              {{ end }}
-              {{ range $i := seq (sub 5 .rating) }}
-                <span class="cv-skills-entry--rating-circle__inactive">●</span>
-              {{ end }}
-            </div>
-          </div>
-        {{ end }}
+    <div class="cv-skills-section">
+      <h4 class="cv-skills-section-title">{{ .category }}</h4>
+      {{ range .items }}
+      <div class="cv-skills-entry">
+        <h5 class="cv-skills-entry--name">{{ .name }}</h5>
+        <div class="cv-skills-entry--rating">
+          {{ range $i := seq .rating }}
+          <span class="cv-skills-entry--rating-circle__active">●</span>
+          {{ end }} {{ range $i := seq (sub 5 .rating) }}
+          <span class="cv-skills-entry--rating-circle__inactive">●</span>
+          {{ end }}
+        </div>
       </div>
+      {{ end }}
+    </div>
     {{ end }}
   </section>
 </aside>
