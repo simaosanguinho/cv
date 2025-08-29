@@ -2,24 +2,37 @@
   <section class="cv-jobs">
     <h2><i class="fas fa-briefcase"></i>Experience</h2>
     {{ range .Site.Data.content.experience }}
-      <div class="cv-jobs-item">
-        <div class="cv-jobs-item--name">{{ .role }} — {{ .company }}</div>
-        <div class="cv-jobs-item--period">{{ .period }}</div>
-        <div class="cv-jobs-item--description">{{ .details | safeHTML }}</div>
-      </div>
+    <div class="cv-jobs-item">
+      <div class="cv-jobs-item--name">{{ .role }} — {{ .company }}</div>
+      <div class="cv-jobs-item--period">{{ .period }}</div>
+      <div class="cv-jobs-item--description">{{ .details | safeHTML }}</div>
+    </div>
     {{ end }}
   </section>
 
   <section class="cv-education">
-    <h2><i class="fas fa-graduation-cap"></i>Education</h2>
+    <h2>
+      <i class="fa-solid fa-graduation-cap"></i>
+      {{ .Site.Data.content.en.sections.education }}
+    </h2>
     {{ range .Site.Data.content.en.education }}
-      <div class="cv-education-item">
-        <div class="cv-education-item--name">{{ .degree }}</div>
-        <div class="cv-education-item--period">{{ .years }}</div>
-        <div class="cv-education-item--description">{{ .school }}</div>
+    <div class="cv-education-item">
+      <div class="cv-education-item--name">{{ .name | markdownify }}</div>
+      <div class="cv-education-item--info">
+        <div>
+          <i class="fa-solid fa-calendar-days"></i>
+          {{ .date | markdownify }}
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          {{ .location | markdownify }}
+        </div>
       </div>
-      
+
+      <div class="cv-education-item--description">
+        {{ .description | markdownify }}
+      </div>
+    </div>
     {{ end }}
   </section>
-
 </main>

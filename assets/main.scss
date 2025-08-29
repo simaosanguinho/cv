@@ -169,6 +169,48 @@ html, body {
       .cv-education-item--name, .cv-jobs-item--name { text-align: left; margin-top: 0.5em; }
     }
   }
+
+  .cv-education-item {
+    position: relative;
+    padding-left: 1.5em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0.2em;
+      top: 0.2em;
+      bottom: 0.3em;
+      width: 3px;
+      background-color: var(--accentColor);
+    }
+  }
+
+  
+.cv-education-item {
+  display: grid;
+  grid-template-columns: 1fr; // single column
+  align-items: start;
+  margin-bottom: 1em;
+
+  .cv-education-item--name {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .cv-education-item--info {
+    justify-self: end; // push block to the right
+    font-size: 0.9em;
+
+    div {
+      margin: 0.2em 0; // stack with spacing
+      display: block;  // each item on its own line
+    }
+  }
+
+}
+
+
 }
 
 // Links and buttons

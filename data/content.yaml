@@ -2,6 +2,11 @@ en:
   name: "Simão Sanguinho"
   tagline: "Computer Science and Engineering Student | Aspiring Software Engineer"
   
+  sections:
+    education: "Education"
+    skills: "Skills"
+    contact: "Contact"
+
   contact:
     - icon: "fas fa-envelope"
       text: "simao.sanguinho@gmail.com"
@@ -41,14 +46,32 @@ en:
         - name: "AWS"
           rating: 3
   
-  experience:
-    - role: "Senior Software Engineer"
-      company: "Tech Company"
-      period: "2022 - Present"
-      details: "<p>Lead development of web applications using modern technologies. Managed a team of 5 developers and implemented CI/CD pipelines.</p><ul><li>Improved application performance by 40%</li><li>Mentored junior developers</li></ul>"
-    - role: "Software Engineer"
-      company: "Another Company"
-      period: "2020 - 2022"
-      details: "<p>Developed and maintained backend services. Worked with microservices architecture and cloud technologies.</p>"
   
   education:
+    - name: Master's in Computer Science and Engineering - Instituto Superior Técnico
+      location: "Lisbon, Portugal"
+      date: "Sep 2024 - Jul 2026"
+      description: |-
+        - Current average: 17/20
+        - Strong focus on Cybersecurity, Distributed Systems, and Cloud Computing.
+
+    - name: "Bachelor's in Computer Science and Engineering - Instituto Superior Técnico"
+      location: "Lisbon, Portugal"
+      date: "Sep 2021 - Jul 2024"
+      description: |-
+        - Final average: 17/20
+        - Awarded [Academic Merit Diploma (2023/2024)](/docs/merit-en-2024.pdf)
+        - Awarded [Academic Merit Diploma (2024/2025)](/docs/merit-en-2025.pdf)
+    - name: "Bachelor of Science - The University of Melbourne"
+      location: "Melbourne, Australia"
+      date: "Jan 2021 - Dec 2021"
+      description: |-
+        - Final average: 80/100
+    - name: "High School - Bentleigh Secondary College"
+      location: "Melbourne, Australia"
+      date: "Nov 2019 - Dec 2020"
+      description: |-
+        - Final average: 96.4% (0.00% - 99.99%)
+        - Year 12 of the Victorian Certificate of Education (VCE)
+        - Top 2nd in the school and top 4% in the state of Victoria
+        - Awarded VCE Premier's Award (2020) for Outstanding Academic Achievement
