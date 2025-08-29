@@ -107,7 +107,7 @@ en:
           - Worked on an automated guided vehicle system to be implemented at large facilities, across multiple industries, particularly on the alignment of the system's Lidar sensors, through the implementation of point cloud algorithms.
 
   - company: "Técnico Lisboa - Informatic Services Department"
-    link: "https://si.tecnico.ulisboa.pt/en/"
+    link: "https://si.tecnico.ulisboa.pt/en/os-servicos-de-informatica/"
     location: "Lisbon, Portugal"
     roles:
       - role: "Research Grantee (Research Fellowship)"
