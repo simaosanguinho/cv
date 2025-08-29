@@ -1,4 +1,9 @@
 <header>
-  <h1>{{ .Site.Data.content.en.name }}</h1>
-  <h4>{{ .Site.Data.content.en.tagline }}</h4>
+  <div class="cv-header-text">
+    <h1>{{ .Site.Data.content.en.name }}</h1>
+    <h4>{{ .Site.Data.content.en.tagline }}</h4>
+  </div>
+  <div class="cv-header-avatar">
+    <img src="{{ "images/avatar.png" | relURL }}" alt="Avatar of {{ .Site.Data.content.en.name }}">
+  </div>
 </header>
