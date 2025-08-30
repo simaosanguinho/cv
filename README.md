@@ -2,6 +2,8 @@
 
 This repository contains the source code for my personal CV website, built using [Hugo](https://gohugo.io/). The site is designed to showcase my professional experience, education and skills.
 
+Visit the live site at: [cv.ssanguinho.pt](https://cv.ssanguinho.pt/)
+
 ![CV Preview](.github/assets/preview.png)
 
 ## Repository Layout
