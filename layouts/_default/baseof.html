@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    {{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify
+    {{ $style := resources.Get "main.scss" | css.Sass | resources.Minify
     }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
     <link

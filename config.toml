@@ -1,5 +1,8 @@
-baseURL = "https://simaosanguinho.github.io/"
+baseURL = "https://cv.ssanguinho.pt/"
 languageCode = "en-us"
 title = "Simão Sanguinho"
 defaultContentLanguage = "en"
 
+
+
+disableKinds = ["taxonomy", "term"]
