@@ -19,9 +19,7 @@
       {{ range .items }}
       <div class="cv-skills-entry">
         <h5 class="cv-skills-entry--name">{{ .name }}</h5>
-        {{ with .value }}
-              {{ . }}
-        {{ end }}
+        {{ with .value }} {{ . }} {{ end }}
       </div>
       {{ end }}
     </div>

@@ -1,4 +1,39 @@
 <main class="cv-sections">
+  <section class="cv-experience">
+    <h2>
+      <i class="fas fa-briefcase"></i>
+      {{ .Site.Data.content.en.sections.experience }}
+    </h2>
+
+    {{ range .Site.Data.content.en.experience }}
+    <div class="cv-experience-company">
+      <div class="cv-experience-company--header">
+        {{ if .link }}
+        <a href="{{ .link }}" target="_blank" rel="noopener">
+          {{ .company }}
+        </a>
+        {{ else }} {{ .company }} {{ end }} — {{ .location }}
+      </div>
+
+      {{ range .roles }}
+      <div class="cv-experience-item">
+        <div class="cv-experience-item--name">{{ .role }}</div>
+
+        <div class="cv-experience-item--info">
+          <div>
+            <i class="fa-solid fa-calendar-days"></i>
+            {{ .period }}
+          </div>
+        </div>
+
+        <div class="cv-experience-item--description">
+          {{ .details | markdownify }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
   <section class="cv-education">
     <h2>
       <i class="fa-solid fa-graduation-cap"></i>
@@ -40,43 +75,4 @@
     </div>
     {{ end }}
   </section>
-
-<section class="cv-experience">
-  <h2>
-    <i class="fas fa-briefcase"></i>
-    {{ .Site.Data.content.en.sections.experience }}
-  </h2>
-
-  {{ range .Site.Data.content.en.experience }}
-  <div class="cv-experience-company">
-    <div class="cv-experience-company--header">
-      {{ if .link }}
-        <a href="{{ .link }}" target="_blank" rel="noopener">
-          {{ .company }}
-        </a>
-      {{ else }}
-        {{ .company }}
-      {{ end }} — {{ .location }}
-    </div>
-
-    {{ range .roles }}
-    <div class="cv-experience-item">
-      <div class="cv-experience-item--name">{{ .role }}</div>
-
-      <div class="cv-experience-item--info">
-        <div>
-          <i class="fa-solid fa-calendar-days"></i>
-          {{ .period }}
-        </div>
-      </div>
-
-      <div class="cv-experience-item--description">
-        {{ .details | markdownify }}
-      </div>
-    </div>
-    {{ end }}
-  </div>
-  {{ end }}
-</section>
-
 </main>
