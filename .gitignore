@@ -1,2 +1,3 @@
-resource/_gen/*
+resources/_gen/*
 .env
+/public/
