@@ -95,12 +95,21 @@ en:
             - Awarded VCE Premier's Award (2020) for Outstanding Academic Achievement
 
   experience:
+    - company: "INESC-ID Lisbon"
+      link: "https://www.inesc-id.pt/"
+      location: "Lisbon, Portugal"
+      roles:
+        - role: "Researcher"
+          period: "Sep 2025 – Present"
+          details: |-
+            - Currently pursuing a Master’s in advanced cloud computing, with a focus on lightweight hypervisors for Serverless.
+
     - company: "Técnico Lisboa - Dept. of Computer Science and Engineering"
       link: "https://dei.tecnico.ulisboa.pt/en/"
       location: "Lisbon, Portugal"
       roles:
         - role: "Full Stack Developer (Research Fellowship)"
-          period: "Sep 2024 – Present"
+          period: "Sep 2024 – Sep 2025"
           details: |-
             - Contributed to the development of the Department's Management System, built using Java Spring Boot and Vue, with a focus on a sub-system integrated with the university API, that facilitates the teaching assistant application process.
 
