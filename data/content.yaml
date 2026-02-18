@@ -103,7 +103,14 @@ en:
           period: "Sep 2025 – Present"
           details: |-
             - Currently pursuing a Master’s in advanced cloud computing, with a focus on lightweight hypervisors for Serverless.
-
+    - company: "Técnico Lisboa - Dept. of Computer Science and Engineering"
+      link: "https://dei.tecnico.ulisboa.pt/en/"
+      location: "Lisbon, Portugal"
+      roles:
+        - role: "Teaching Assistant"
+          period: "Jan 2026 – April 2026"
+          details: |-
+            - Teaching assistant for the Distributed Systems course.
     - company: "Técnico Lisboa - Dept. of Computer Science and Engineering"
       link: "https://dei.tecnico.ulisboa.pt/en/"
       location: "Lisbon, Portugal"
