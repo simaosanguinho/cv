@@ -29,4 +29,9 @@ To build the site for production, use:
 hugo --minify
 ```
 
-A deployment script is provided in `deploy.sh` to automate the deployment process to the server.
+## Deployment
+To deploy it through [Cloudflare Pages](https://pages.cloudflare.com/), run the following command:
+
+```bash
+hugo --minify && npx wrangler pages deploy public --project-name cv
+```

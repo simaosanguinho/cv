@@ -4,6 +4,7 @@
   },
   "devDependencies": {
     "prettier": "^2.7.1",
-    "prettier-plugin-go-template": "^0.0.13"
+    "prettier-plugin-go-template": "^0.0.13",
+    "wrangler": "^4.103.0"
   }
 }
