@@ -35,3 +35,7 @@ To deploy it through [Cloudflare Pages](https://pages.cloudflare.com/), run the 
 ```bash
 hugo --minify && npx wrangler pages deploy public --project-name cv
 ```
+
+To run this command the wrangler.toml file is used.
+
+However thew current setup allows the Cloudflare Pages to automatically build and deploy the site whenever changes are pushed to the main branch, so you can simply push your changes and let Cloudflare handle the deployment.
